@@ -1,0 +1,102 @@
+nav {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    font-family: 'Cinzel', serif;
+    font-size: 17px;
+    font-weight: 600;
+    justify-content: space-evenly;
+    left: 0;
+    position: fixed;
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.5),
+        0px -4px 10px rgba(255, 255, 255, 0.5);
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav__logo {
+    padding-top: 5px;
+}
+
+.nav__logo-img {
+    width: 190px;
+}
+
+.nav__list {
+    list-style-type: none;
+}
+
+.nav__list-item {
+    display: inline-block;
+    padding: 15px 30px;
+}
+
+.nav__link {
+    border-bottom: solid rgba(109, 76, 76, 0) 2px;
+    border-radius: 6px;
+    border-top: solid rgba(109, 76, 76, 0) 2px;
+    color: white;
+    padding: 8px 10px;
+    transition: 0.3s;
+}
+
+.nav__link:hover {
+    border-bottom-color: rgb(114, 57, 66);
+    border-top-color: rgb(114, 57, 66);
+}
+
+/* HAMBURGER MENU - WERSJA MOBILE */
+
+.nav__hamburger-menu {
+    display: none;
+}
+
+.nav__hamburger-menu-line {
+    background-color: white;
+    height: 2px;
+    margin-bottom: 5px;
+    width: 30px;
+}
+
+@media (max-width: 872px) {
+
+
+    nav {
+        background-color: rgba(0, 0, 0, 0.7);
+        flex-direction: column;
+    }
+
+    .nav__list {
+        display: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav__list-item {
+        border-top: 1px solid rgb(114, 57, 66);
+        display: block;
+        padding: 13px 30px;
+    }
+
+    .nav__link {
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .nav__link:hover {
+        color: white;
+    }
+
+    .nav__hamburger-menu {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 43px;
+    }
+
+    .active {
+        display: block;
+    }
+
+}

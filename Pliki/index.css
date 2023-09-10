@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #27252a;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 300;
+}
+
+p {
+    letter-spacing: 0.5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: white;
+    font-family: 'Cinzel', serif;
+    font-size: 42px;
+    text-align: center;
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.5),
+        0px -4px 10px rgba(255, 255, 255, 0.5);
+}
+
+h2 {
+    color: rgb(114, 57, 66);
+    font-family: 'Cinzel', serif;
+    font-size: 34px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.welcome {
+    align-items: center;
+    background-image: url("grafiki/photo30.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.description {
+    background-color: white;
+    margin-top: 100vh;
+}
+
+.introduction {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.introduction-text {
+    padding: 0 50px;
+    text-align: center;
+    width: 50%;
+}
+
+.introduction-text p {
+    padding-bottom: 20px;
+}
+
+.introduction-text p span {
+    font-weight: 500;
+}
+
+.introduction-image-wrapper {
+    padding: 0 20px;
+    width: 50%;
+}
+
+.introduction-image {
+    border-radius: 20px;
+    height: auto;
+    max-width: 100%;
+}
+
+.benefits {
+    margin-top: 100px;
+}
+
+.benefits-box-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.benefits-box {
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    width: 33%;
+}
+
+.benefits-box i {
+    color: #403636;
+    padding-bottom: 15px;
+    font-size: 50px;
+}
+
+.benefits-heading {
+    color: #403636;
+    font-size: 20px;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.benefits-box p {
+    padding: 0px 10px;
+}
+
+.opinions {
+    margin-top: 40px;
+
+}
+
+.opinions-box-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.opinions-box {
+    background-color: #ededed;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.8;
+    margin: 0 30px;
+    padding: 40px 30px;
+    text-align: center;
+    width: 23%;
+
+}
+
+.opinions-name {
+    color: #403636;
+    font-family: 'Cinzel', serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.location {
+    padding-bottom: 40px;
+    margin-top: 100px;
+
+}
+
+.location-map-wrapper {
+    height: 60vh;
+    padding: 0 20px;
+}
+
+.location-map {
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 872px) {
+
+    .introduction {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .introduction-text {
+        margin-bottom: 20px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .introduction-image-wrapper {
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .benefits {
+        margin-top: 70px;
+    }
+
+    .benefits-box-wrapper {
+        flex-direction: column;
+        margin-top: 35px;
+    }
+
+    .benefits-box {
+        width: 100%;
+    }
+
+    .opinions-box-wrapper {
+        align-items: center;
+        flex-direction: column;
+        margin-top: 35px;
+    }
+
+    .opinions-box {
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .location-map-wrapper {
+        margin-top: 35px;
+    }
+
+}

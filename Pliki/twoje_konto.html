@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twoje konto</title>
+    <link rel="stylesheet" href="twoje_konto.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="nav__logo">
+                    <a href="index.html"><img class="nav__logo-img" src="grafiki/logo.png"
+                            alt="Logo Domu Przyjęć Monika"></a>
+                </div>
+                <ul class="nav__list" id="nav__list">
+                    <li class="nav__list-item"><a class="nav__link" href="galeria.html">Galeria</a></li>
+                    <li class="nav__list-item"><a class="nav__link" href="o_nas.html">O nas</a></li>
+                    <li class="nav__list-item"><a class="nav__link" href="kontakt.html">Kontakt</a></li>
+                    <li class="nav__list-item"><a class="nav__link" href="twoje_konto.html">Twoje konto</a></li>
+                </ul>
+                <div class="nav__hamburger-menu" id="toggle-button">
+                    <div class="nav__hamburger-menu-line"></div>
+                    <div class="nav__hamburger-menu-line"></div>
+                    <div class="nav__hamburger-menu-line"></div>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="login">
+                <h2>Logowanie</h2>
+                <form class="form">
+                    <div class="form__input-box">
+                        <input id="login_email" type="email" placeholder=" " required>
+                        <label for="login_email">Adres e-mail</label>
+                    </div>
+                    <div class="form__input-box">
+                        <input id="login_password" type="password" placeholder=" " required>
+                        <label for="login_password">Hasło</label>
+                    </div>
+                    <button class="submit-btn">Zaloguj się</button>
+                </form>
+            </div>
+            <div class="register">
+                <h2>Nie masz konta? Zarejestruj się</h2>
+                <form class="form">
+                    <div class="form__input-box">
+                        <input id="first-name" type="text" placeholder=" " required>
+                        <label for="first-name">Imię</label>
+                    </div>
+                    <div class="form__input-box">
+                        <input id="surname" type="text" placeholder=" " required>
+                        <label for="surname">Nazwisko</label>
+                    </div>
+                    <div class="form__input-box">
+                        <input id="register_email" type="email" placeholder=" " required>
+                        <label for="register_email">Adres e-mail</label>
+                    </div>
+                    <div class="form__input-box">
+                        <input id="register_password" type="password" placeholder=" " required>
+                        <label for="register_password">Hasło</label>
+                    </div>
+                    <button class="submit-btn">Zarejestruj się</button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="footer__top">
+                <div class="footer__top-box">
+                    <h3>Adres</h3>
+                    <p>ul. Powstańców 9</p>
+                    <p>44-351 Turza Śląska</p>
+                </div>
+                <div class="footer__top-box">
+                    <h3>Dane kontaktowe</h3>
+                    <p>+48 609 089 395</p>
+                    <p>dpmonika@gmail.com</p>
+                </div>
+                <div class="footer__top-box">
+                    <h3>Social media</h3>
+                    <p>
+                        <a href="https://www.facebook.com/DomPrzyjecMonika" target="_blank"><i
+                                class="fa-brands fa-square-facebook"></i></a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>Copyright © Dom Przyjęć Monika 2023</p>
+                <p>Designed by <span>Szymon Rybiński</span></p>
+            </div>
+        </footer>
+    </div>
+    <script src="hamburger-menu.js"></script>
+</body>
+
+</html>

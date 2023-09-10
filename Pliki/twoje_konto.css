@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #27252a;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    color: rgb(114, 57, 66);
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    padding-top: 110px;
+    width: 75%;
+}
+
+.login {
+    width: 50%;
+}
+
+.register {
+    width: 50%;
+}
+
+.login,
+.register {
+    border: 1px solid rgba(0, 0, 0, 0.215);
+    border-radius: 5px;
+    box-shadow: 0px 8px 24px 0 rgba(0, 0, 0, 0.3);
+    padding: 30px 45px;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+.form__input-box {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+
+.submit-btn {
+    background-color: rgb(114, 57, 66);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 8px 24px 0 rgba(0, 0, 0, 0.3);
+    color: white;
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+    height: 50px;
+    transition: background-color 0.3s, color 0.3s, border 0s;
+}
+
+.submit-btn:hover {
+    color: rgb(114, 57, 66);
+    background-color: white;
+    border: solid 1px rgb(114, 57, 66);
+}
+
+
+.login .form input,
+.register .form input {
+    background-color: #ededed;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 8px 24px 0 rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+    height: 50px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.login .form label,
+.register .form label {
+    font-style: italic;
+    left: 20px;
+    opacity: 0.4;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: scale 0.3s, opacity 0.3s;
+}
+
+.login .form input:focus+label,
+.login .form input:not(:placeholder-shown)+label,
+.register .form input:focus+label,
+.register .form input:not(:placeholder-shown)+label {
+    opacity: 0;
+    scale: 0.8;
+}
+
+@media (max-width: 872px) {
+
+    .content {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .login,
+    .register {
+        margin: 20px 0;
+        width: 100%;
+    }
+
+
+}

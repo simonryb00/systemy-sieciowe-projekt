@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 1);
+    color: #27252a;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    color: rgb(114, 57, 66);
+    font-family: 'Cinzel', serif;
+    font-size: 34px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    padding: 0 20px;
+    letter-spacing: 0.5px;
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 130px;
+    text-align: center;
+    width: 95%;
+}
+
+.history-images {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+
+.history-image {
+    border-radius: 20px;
+    object-fit: cover;
+    padding: 0 5px;
+    width: 33%;
+}
+
+.team {
+    padding-bottom: 40px;
+    padding-top: 25px;
+}
+
+.team__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px 0;
+    width: 100%;
+}
+
+.team__row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.team__row-img-wrapper {
+    border-radius: 20px;
+    height: 450px;
+    margin: 0 2px;
+    overflow: hidden;
+    width: 49%;
+}
+
+.team__row-img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+.team__row-desc {
+    background-color: rgb(33, 32, 32);
+    border-radius: 20px;
+    color: white;
+    margin: 0 2px;
+    padding: 40px 30px;
+    width: 49%;
+}
+
+.team__person-name {
+    border-bottom: 5px solid white;
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+
+.team__position-name {
+    font-size: 24px;
+    padding-bottom: 3px;
+}
+
+.team__row-desc p {
+    padding: 20px 0;
+}
+
+
+.team__person-name,
+.team__position-name {
+    color: white;
+    font-family: 'Cinzel', serif;
+}
+
+@media (max-width: 872px) {
+
+    .content {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .history-images {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .history-image {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    .team__row {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .team__row-img-wrapper {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        width: 100%;
+    }
+
+    .team__row-desc {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding-bottom: 25px;
+        padding-top: 25px;
+        width: 100%;
+    }
+
+}
